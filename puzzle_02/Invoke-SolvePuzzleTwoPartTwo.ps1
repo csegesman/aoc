@@ -16,7 +16,6 @@ foreach ($line in $list){
 
     $password_character_array = $password.ToCharArray()
 
-    $valid = $false
     if ($password_character_array[$policy_number_index_one] -eq $policy_letter -and $password_character_array[$policy_number_index_two] -ne $policy_letter){
         $valid_count++
     } elseif ($password_character_array[$policy_number_index_two] -eq $policy_letter -and $password_character_array[$policy_number_index_one] -ne $policy_letter) {
