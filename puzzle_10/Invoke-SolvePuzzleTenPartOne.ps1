@@ -1,4 +1,4 @@
-$input = Get-Content input_test2.txt
+$input = Get-Content input.txt
 
 $jolt_array = @()
 $jolt_diff_one_accumulator = 0
