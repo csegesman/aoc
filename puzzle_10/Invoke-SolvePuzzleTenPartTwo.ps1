@@ -8,7 +8,7 @@ function Get-Fibonacci {
     param (
         $number
     )
-    $current = $previous = $count = 1;
+    $current = $previous = $count = 1
     while ($count -lt $number){
         $current,$previous = ($current + $previous),$current
         $count++
