@@ -1,4 +1,4 @@
-$input = Get-Content input.txt
+$input = Get-Content input_test1.txt
 
 $jolt_array = @()
 $jolt_diff_one_accumulator = 0
@@ -8,7 +8,7 @@ foreach ($line in $input){
     $jolt_array += [int]$line
 }
 
-$sorted_jolt_array = $jolt_array | sort
+$sorted_jolt_array = $jolt_array | Sort-Object
 
 $look_behind = 0
 foreach ($jolt in $sorted_jolt_array){

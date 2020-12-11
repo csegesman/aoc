@@ -35,7 +35,7 @@ foreach ($line in $input){
     $jolt_array += [int]$line
 }
 
-$sorted_jolt_array = $jolt_array | sort
+$sorted_jolt_array = $jolt_array | Sort-Object
 $sorted_jolt_array += $sorted_jolt_array[-1]+3
 
 $look_behind = 0
