@@ -22,7 +22,6 @@ while (!$found_earliest){
                 $previous_time = $time
             } else {
                 $interval = $time - $previous_time
-                $previous_time = $time
                 #Write-Verbose "Difference: $interval" -Verbose
                 $previous_time = 0
                 $bus_index_previous = $bus_index
