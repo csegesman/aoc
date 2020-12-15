@@ -5,11 +5,9 @@ $target_number = 30000000
 
 # Instantiate with input
 $iteration = 1
-$next_number = 0
 foreach ($number in $number_list){
     $memory["$number"] = $iteration
     $iteration++
-    $number = $number
 }
 $next_number = 0
 while ($iteration -lt $target_number){
